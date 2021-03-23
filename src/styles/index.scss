@@ -1,0 +1,109 @@
+// Media query screen sizes
+// Reference: https://ricostacruz.com/til/css-media-query-breakpoints
+$screen-small: 480px;
+$screen-medium: 768px;
+$screen-large: 992px;
+$screen-xlarge: 1200px;
+
+// Avoid over-stretching container elements in the desktop view
+$container-max-width-small: 400px;
+$container-max-width-medium: 550px;
+$container-max-width-large: 800px;
+$container-max-width-xlarge: 900px;
+$container-max-width-xxlarge: 1300px;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.4rem;
+  font-family: Avenir, sans-serif;
+  margin: 0;
+  color: #393737;
+
+  // @media (min-width: $screen-large) {
+  //   max-width: $container-max-width-large;
+  // }
+}
+
+nav {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  background: #30D5EB;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 10.4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  a {
+    line-height: 7rem;
+    color: #393737;
+    font-size: 3.6rem;
+  }
+}
+
+#hero {
+  height: 1200px;
+  width: calc(100vw - 10.4rem);
+  background: #FED1BF;
+
+  h1 {
+    margin: 90px 0 110px 100px;
+    display: inline-block;
+    font-family: Krungthep, Avenir, sans-serif;
+    text-transform: uppercase;
+    font-size: 4.8rem;
+  }
+
+  .eva {
+    width: 20rem;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .separator {
+    width: 10px;
+    height: 300px;
+    background: #FFF;
+  }
+
+  .left {
+    text-align: center;
+    font-size: 3.8rem;
+    margin-right: 80px;
+
+    p {
+      margin: 1rem;
+      font-weight: 300;
+    }
+
+    .hi {
+      font-weight: 800;
+      font-family: Georgia, serif;
+    }
+  }
+
+  .right {
+    width: 704px;
+    margin-left: 80px;
+    font-weight: 100;
+
+    ul {
+      padding-left: 1.8rem;
+      margin-top: 0.2rem;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
