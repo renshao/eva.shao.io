@@ -51,9 +51,14 @@ nav {
   }
 }
 
+#main-container {
+  width: calc(100vw - 10.4rem);
+  height: 100vh;
+  overflow: scroll;
+}
+
 #hero {
   height: 1200px;
-  width: calc(100vw - 10.4rem);
   background: #fed1bf;
 
   h1 {
@@ -105,4 +110,27 @@ nav {
       margin-top: 0.2rem;
     }
   }
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: [left] 1fr [right] 1fr;
+
+  .left {
+    grid-area: left;
+    min-height: 500px;
+  }
+
+  .right {
+    grid-area: right;
+    min-height: 500px;
+  }
+}
+
+#work > .left {
+  background: #cea537;
+}
+
+#contact > .right {
+  background: #ddaaff;
 }
