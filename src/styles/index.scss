@@ -27,10 +27,14 @@ body {
   // }
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  background: #30D5EB;
+  background: #30d5eb;
   position: absolute;
   right: 0;
   top: 0;
@@ -50,7 +54,7 @@ nav {
 #hero {
   height: 1200px;
   width: calc(100vw - 10.4rem);
-  background: #FED1BF;
+  background: #fed1bf;
 
   h1 {
     margin: 90px 0 110px 100px;
@@ -72,7 +76,7 @@ nav {
   .separator {
     width: 10px;
     height: 300px;
-    background: #FFF;
+    background: #fff;
   }
 
   .left {
@@ -102,8 +106,3 @@ nav {
     }
   }
 }
-
-a {
-  text-decoration: none;
-}
-
