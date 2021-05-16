@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://webpack-starter/./src/scripts/index.js"],"names":["console","log"],"mappings":"yBACAA,QAAQC,IAAI,sB","file":"js/app.4a8a8056.js","sourcesContent":["import '../styles/index.scss';\nconsole.log('webpack starterkit');\n"],"sourceRoot":""}
