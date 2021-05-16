@@ -57,6 +57,21 @@ nav {
   overflow: scroll;
 }
 
+.two-col {
+  display: grid;
+  grid-template-columns: [left] 1fr [right] 1fr;
+
+  .left {
+    grid-area: left;
+    min-height: 500px;
+  }
+
+  .right {
+    grid-area: right;
+    min-height: 500px;
+  }
+}
+
 #hero {
   height: 1200px;
   background: #fed1bf;
@@ -112,25 +127,10 @@ nav {
   }
 }
 
-.two-col {
-  display: grid;
-  grid-template-columns: [left] 1fr [right] 1fr;
-
-  .left {
-    grid-area: left;
-    min-height: 500px;
-  }
-
-  .right {
-    grid-area: right;
-    min-height: 500px;
-  }
-}
-
 #work > .left {
   background: #cea537;
 }
 
 #contact > .right {
-  background: #ddaaff;
+  background: #daf;
 }
